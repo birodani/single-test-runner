@@ -21,7 +21,7 @@ export function activate(context: vscode.ExtensionContext) {
 		terminal.show();
 		terminal.sendText('ng test --main '+uri.fsPath.toString());
 		// Display a message box to the user
-		vscode.window.showInformationMessage(uri.path);
+		//vscode.window.showInformationMessage(uri.path);
 	});
 
 	context.subscriptions.push(disposable);
